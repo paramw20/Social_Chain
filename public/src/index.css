@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(-45deg, #8E8FD1, #684694, #C741E1, #C0E0F4);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  font-family: 'Mission Script', cursive, sans-serif; /* Set font family to 'Mission Script', fallback to cursive, and then to sans-serif */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Add styles for the report button */
+.report-button {
+  background-color: #8B008B; /* Dark purple color */
+  color: white;
+  border: none;
+  padding: 0.3rem 0.8rem; /* Adjust padding for a shorter button */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.report-button:hover {
+  background-color: #4B0082; /* Darker shade of purple on hover */
+}
+
+/* Add additional styles for post-container, post-image, and likes-count if needed */
+.post-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding around the post content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  margin-bottom: 20px; /* Spacing between posts */
+}
+.post-image {
+  width: 100%; /* Make the image fill the container */
+  border-radius: 10px; /* Rounded corners */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
